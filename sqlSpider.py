@@ -50,7 +50,7 @@ class SQLSpider:
                         if r_scr == r_true:
                             if r_true != r_false:
                                 print('\t发现漏洞： ', scan)
-                                self.dataList.append([get_url, scan])
+                                self.dataList.append([get_url.url, scan])
                                 self.found += 1
                 except Exception:
                     print('url error')
